@@ -17,14 +17,6 @@
 <script>
   "use strict";
 
-  /**
-   * Функция перемещает цифры получая наибольшее число.
-   * @param {number} n - Число, из цифр которого нужно составить наибольшее
-   * возможное число с теми же цифрами.
-   * @returns {number} - Набольшее число из набора цифр числа, переданного в
-   * параметр "n"
-   */
-
   function descendingOrder(n) {
     return +n.toString().split('').sort((a, b) => b - a).join('');
     // return +Array.from(n.toString(), Number).sort((a, b) => b - a).join('');
